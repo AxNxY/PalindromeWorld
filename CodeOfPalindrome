@@ -1,0 +1,15 @@
+bool isPalindrome(const string &str) 
+{
+  int i = 0; // index to the beginning of the string 
+  int j = str.length()-1; // index to the end of the string
+    // iterate until index cross
+  
+  while(i<j) 
+  {
+      if(tolower(str[i]) != tolower(str[j]))
+      return false; i++;
+      i++;
+      j--;
+  }
+  
+  return true; 
